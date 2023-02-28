@@ -6,8 +6,8 @@ public class Main {
 //        task4();
 //        task5();
 //        task6();
-//        task7();
-        task8();
+        task7();
+//        task8();
 
     }
 
@@ -63,14 +63,16 @@ public class Main {
 
 
         private static void task4 () {
-        double pr = 0.7;
+        double pr = 0.07;
         double salary = 15_000;
 
-        double n = salary * pr;
+
         int month = 0;
 
         while (salary < 12_000_000) {
+            double n = salary * pr;
             salary = salary + n;
+
             month++;
             System.out.println("Месяц " + month + ", суммы вклада равна: " + salary);
         }
@@ -78,13 +80,14 @@ public class Main {
 
     }
     private static void task5() {
-        double pr = 0.7;
+        double pr = 0.07;
         double salary = 15_000;
 
-        double n = salary * pr;
         int month = 0;
 
         while (salary < 12_000_000) {
+            double n = salary * pr;
+
             salary = salary + n;
             month++;
             if (month % 6 == 0){
@@ -97,7 +100,7 @@ public class Main {
         int durationInMonths = 9;
         double salary = 15_000;
 
-        double percent = 0.7;
+        double percent = 0.07;
 
         for (int i = 0; i <= durationInMonths; i++) {
             salary = salary * percent;
@@ -110,10 +113,11 @@ public class Main {
     }
 
     private static void task7() {
-        int day = 3;
-        int currentDay = day;
+        int friday = 3;
+        int currentDay = friday;
         while (currentDay < 31) {
-            System.out.println("Сегодня пятница " + currentDay + " необходимо подготовить отчет");
+            currentDay += 7;
+            System.out.println("Сегодня пятница, " + currentDay + " -е число необходимо подготовить отчет");
         }
     }
     private static void task8() {
