@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-        task6();
+//        task1();
+//        task2();
+//        task3();
+//        task4();
+//        task5();
+//        task6();
+//        task7();
+        task8();
+
     }
 
 
@@ -107,9 +110,22 @@ public class Main {
     }
 
     private static void task7() {
-
+        int day = 3;
+        int currentDay = day;
+        while (currentDay < 31) {
+            System.out.println("Сегодня пятница " + currentDay + " необходимо подготовить отчет");
+        }
     }
     private static void task8() {
+        int n = 1823;
+        int years = 79;
+
+        while (n < 2023) {
+            n += years;
+            System.out.println(n);
+        }
+
+
 
     }
 
